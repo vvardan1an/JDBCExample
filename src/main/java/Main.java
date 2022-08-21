@@ -8,7 +8,8 @@ public class Main {
     public static void main(String[] args){
         UserManager userManager = new UserManager();
         try {
-            userManager.addUser(new User("poxos","poxosyan","pox@mail.ru","poxos"));
+            User user = new User("poxos","poxosyan","pox@mail.ru","poxos");
+            userManager.addUser(user);
         } catch (SQLException e) {
             e.printStackTrace();
         }
